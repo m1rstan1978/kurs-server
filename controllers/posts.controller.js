@@ -2,7 +2,7 @@ const db = require('../db')
 const path = require('path')
 const fs = require('fs')
 const uuid = require('uuid')
-const urlPage = 'https://6bp98ls3-8000.euw.devtunnels.ms/posts/'
+const urlPage = 'https://kurs-server-vwrp.vercel.app/posts/'
 
 class postsController {
     async createPost(req,res) {

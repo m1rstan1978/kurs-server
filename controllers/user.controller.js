@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken')
 const secretKey  = 'SECRET_KEY'
 const uuid = require('uuid')
 const path = require('path')
-const urlPage = 'https://6bp98ls3-8000.euw.devtunnels.ms/users/'
+const urlPage = 'https://kurs-server-vwrp.vercel.app/users/'
 
 const generateAccessToken = (login) => {
     const payload = {
