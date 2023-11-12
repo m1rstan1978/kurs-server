@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const https = require('https');
+const http = require('http');
 const db = require('./db')
 const { Server } = require('socket.io');
 
@@ -16,7 +16,7 @@ const fileUpload = require('express-fileupload');
 const PORT = process.env.PORT || 8000
 
 const app = express()
-const server = https.createServer(app);
+const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
       origin: '*',
